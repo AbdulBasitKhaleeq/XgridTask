@@ -1,0 +1,103 @@
+{
+  "name": "ngx-toastr",
+  "description": "Toastr for Angular",
+  "homepage": "https://github.com/scttcper/ngx-toastr",
+  "bugs": "https://github.com/scttcper/ngx-toastr/issues",
+  "repository": "scttcper/ngx-toastr",
+  "version": "0.0.0-placeholder",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ts-node -O '{\"module\": \"commonjs\"}' build.ts",
+    "test": "ng test --watch=false",
+    "test:watch": "ng test",
+    "test:ci": "ng test --watch=false --code-coverage --no-progress",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "ghpages": "ng build --prod --no-progress --baseHref='/ngx-toastr/'",
+    "e2e": "ng e2e",
+    "bundlesize": "npx bundlesize",
+    "semantic-release": "cd dist && semantic-release"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^7.2.11",
+    "@angular/common": "^7.2.11",
+    "@angular/compiler": "7.2.11",
+    "@angular/core": "7.2.11",
+    "@angular/forms": "^7.2.11",
+    "@angular/http": "^7.2.11",
+    "@angular/platform-browser": "7.2.11",
+    "@angular/platform-browser-dynamic": "7.2.11",
+    "@angular/router": "^7.2.11",
+    "@ctrl/ngx-github-buttons": "^2.1.1",
+    "angular2-jwt": "^0.2.3",
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.6.5",
+    "lodash-es": "^4.17.11",
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.5.1",
+    "zone.js": "^0.8.29"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "0.13.7",
+    "@angular/cli": "7.3.7",
+    "@angular/compiler-cli": "7.2.11",
+    "@angular/language-service": "7.2.11",
+    "@types/fs-extra": "5.0.5",
+    "@types/jasmine": "3.3.12",
+    "@types/jasminewd2": "2.0.6",
+    "@types/lodash-es": "4.17.3",
+    "@types/node": "11.11.4",
+    "@types/rimraf": "2.0.2",
+    "codelyzer": "4.5.0",
+    "fs-extra": "7.0.1",
+    "jasmine-core": "3.3.0",
+    "jasmine-spec-reporter": "4.2.1",
+    "karma": "4.0.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-cli": "2.0.0",
+    "karma-coverage-istanbul-reporter": "2.0.5",
+    "karma-jasmine": "2.0.1",
+    "karma-jasmine-html-reporter": "1.4.0",
+    "karma-mocha-reporter": "2.2.5",
+    "ng-packagr": "4.7.1",
+    "protractor": "5.4.2",
+    "rimraf": "2.6.3",
+    "semantic-release": "15.13.3",
+    "ts-node": "8.0.3",
+    "tsickle": "0.34.3",
+    "tslint": "5.14.0",
+    "typescript": "3.2.4"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/bundles/ngx-toastr.umd.min.js",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/esm2015/ngx-toastr.js",
+      "maxSize": "8 kB"
+    },
+    {
+      "path": "./dist/esm5/ngx-toastr.js",
+      "maxSize": "8 kB"
+    },
+    {
+      "path": "./dist/toastr.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/toastr-old.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/toastr-bs4-alert.scss",
+      "maxSize": "5 kB"
+    }
+  ]
+}
